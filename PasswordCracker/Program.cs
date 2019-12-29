@@ -36,10 +36,11 @@ namespace PasswordCracker
             }
 
             string passwordList = "";
-            Console.WriteLine("Enter the Password List File Name :: example (rockyou.txt)");
+            Console.WriteLine("Enter the Password List File Name or just press Enter to use rockyou.txt:");
             passwordList = Console.ReadLine();
+            if (passwordList == "") passwordList = @"D:\Users\PaulC\Documents\Password Lists\rockyou.txt";
 
-            if(File.Exists(passwordList))
+            if (File.Exists(passwordList))
             {
                 Console.WriteLine("Password List Found Ok");
             }
