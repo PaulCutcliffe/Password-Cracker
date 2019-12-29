@@ -61,7 +61,7 @@ namespace PasswordCracker
             using (StreamReader file = new StreamReader(passwordList))
             {
 
-                //this will run untill closeloop = false or the end of the file 
+                //this will run until closeloop = false or the end of the file 
                 while (closeLoop == true && (Pass = file.ReadLine()) != null)
                 {
                     //this compares the output md5hash to the hash entered above and closes while loop
